@@ -59,7 +59,7 @@ test("Add --> Search --> Delete Employee @ForQA", async ({ page }) => {
     await employeeLastName.fill(employeeLastNameInput);
 
     const filename = 'Pic.png';
-    const filePath = path.join(__dirname, '..', 'Imgs', filename);
+    const filePath = path.join(__dirname, '../..', 'Imgs', filename);
 
     await page.setInputFiles('input[type="file"]', filePath);
 

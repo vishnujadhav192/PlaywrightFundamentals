@@ -56,7 +56,7 @@ test("Add --> Delete Employee by scanning all pages @ForQA", async ({ page }) =>
     await page.locator('[name="middleName"]').fill(`M${ddmmyy}`);
     await page.locator('[name="lastName"]').fill(`L${ddmmyy}`);
 
-    const filePath = path.join(__dirname, '..', 'Imgs', 'Pic.png');
+    const filePath = path.join(__dirname, '../..', 'Imgs', 'Pic.png');
     await page.setInputFiles('input[type="file"]', filePath);
 
     await page.getByRole('button', { name: 'Save' }).click();
